@@ -23,3 +23,12 @@ La sincronización usa señalización pública de PeerJS: necesita Internet, aun
 
 ### Próximas fases
 Calibración robusta, optotipos con geometría verificada, pruebas de visión cercana, historial técnico sin datos identificatorios, conexión Wi-Fi local mediante servidor propio y ensayos en televisores reales.
+
+
+## Compatibilidad universal con televisores
+Se utiliza una aplicación web en vez de una app exclusiva de una marca. En televisores Philips, Samsung, LG, Android/Google TV y dispositivos HDMI con navegador moderno, probar primero las URLs de TV y control. **No todos los navegadores de TV admiten WebRTC, PeerJS, JavaScript moderno, pantalla completa o almacenamiento persistente**, por lo que la compatibilidad debe probarse en cada modelo. En televisores incompatibles, conectar un Chromecast con navegador, Android TV box, mini PC o notebook por HDMI, manteniendo el mismo control desde el teléfono.
+
+Para instalar en otro televisor: abrir `?view=tv`, configurar diagonal, distancia, modo de visualización y calibrar con regla. Cada televisor tiene su propia configuración guardada en su navegador; compartir pulgadas no equivale a compartir calibración.
+
+### Condiciones para un examen seguro
+Confirmar distancia real al paciente, relación de aspecto 16:9, nivel de zoom del navegador al 100 %, ajuste de imagen sin overscan, brillo uniforme, ausencia de escalado posterior y dimensiones con regla. Después de cada cambio de resolución o modo de pantalla, recalibrar. Los módulos de duocromo, astigmatismo y Amsler de esta versión no tienen validación instrumental. No interpretar los resultados como una evaluación visual completa.
