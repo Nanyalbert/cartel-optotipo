@@ -32,3 +32,11 @@ Para instalar en otro televisor: abrir `?view=tv`, configurar diagonal, distanci
 
 ### Condiciones para un examen seguro
 Confirmar distancia real al paciente, relación de aspecto 16:9, nivel de zoom del navegador al 100 %, ajuste de imagen sin overscan, brillo uniforme, ausencia de escalado posterior y dimensiones con regla. Después de cada cambio de resolución o modo de pantalla, recalibrar. Los módulos de duocromo, astigmatismo y Amsler de esta versión no tienen validación instrumental. No interpretar los resultados como una evaluación visual completa.
+
+## Interfaz de consultorio (actualización)
+- Selector explícito **Ojo derecho (OD)**, **Ojo izquierdo (OI)** y **Ambos ojos (AO)** en el control del celular. Esta selección **no tapa físicamente el ojo**; utilizar oclusor externo cuando corresponda.
+- Modos **Cartel completo**, **Fila única** y **Letra única**; el cartel completo presenta líneas decrecientes.
+- Abanico astigmático con marcas angulares. Las marcas son orientativas, no reemplazan un instrumento validado.
+- Interfaz más clara en móvil y pantalla del paciente blanca y sin controles distractores.
+
+**Limitaciones:** el cartel de letras sigue usando fuentes tipográficas, no un juego verificado de optotipos Sloan ni una implementación certificada de ISO 8596/ETDRS. La fila completa puede requerir validación adicional de espaciado y ajuste físico en cada pantalla. Este prototipo no debe usarse como sustituto de una evaluación optométrica validada.
