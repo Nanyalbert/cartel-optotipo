@@ -36,3 +36,5 @@ body:has(.shell){background:#edf2f8;color:#17243a}
 .shell .eye-choice.active{box-shadow:0 0 0 2px #8eb8ff inset}
 .shell .head{margin-bottom:15px}
 @media(max-width:700px){.shell .buttons:has(.eye-choice){gap:5px}.shell .head{gap:6px}.shell .status{font-size:11px}.shell .version{font-size:10px}}
+
+.level-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}.level-choice{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:60px}.level-choice small{font-size:12px;color:inherit;opacity:.85}.chart-page{font:14px system-ui;color:#9a3412;text-align:center;margin:14px}.fullchart{max-height:86vh;overflow:hidden}@media(max-width:480px){.level-grid{gap:5px}.level-choice{padding:7px 2px}}
