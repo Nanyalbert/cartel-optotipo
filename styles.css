@@ -54,3 +54,10 @@ body:has(.shell){background:#f1f4f9}
 .shell input:disabled{opacity:.65;background:#eef2f8}
 .shell .eye-choice small{color:inherit}
 @media(max-width:700px){.shell .grid{display:flex;flex-direction:column}.shell .panel{margin-bottom:12px}.shell .buttons{gap:7px}.shell .btn{font-size:13px;padding:10px 8px}.shell .eye-choice{padding:9px 3px}.shell .level-grid .btn{min-height:58px}}
+
+/* TV controls must remain reachable with a remote or mouse */
+.tvtools{opacity:1;top:12px;right:12px;flex-wrap:wrap;justify-content:flex-end;max-width:95vw}
+.tvtools button{cursor:pointer;padding:12px 15px;font-size:14px;background:rgba(31,41,55,.9);border:2px solid transparent}
+.tvtools button:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
+.tvtools #sessionReset{background:#9c2929;color:white}
+@media(max-width:650px){.tvtools{position:fixed;left:8px;right:8px;top:8px}.tvtools button{font-size:12px;padding:9px}}
