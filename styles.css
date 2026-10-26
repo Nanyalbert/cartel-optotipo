@@ -27,3 +27,12 @@ body:has(.shell){background:#edf2f8;color:#17243a}
 .preview .optolabel{font-size:11px}
 .preview .fullchart{gap:5px}.preview .optotype{padding:9px}
 @media(max-width:700px){.shell{padding:10px}.shell .head{padding:10px 4px}.shell .brand{font-size:15px}.shell .panel{border-radius:15px;padding:15px}.shell .grid{gap:10px}.shell .tests{grid-template-columns:repeat(2,minmax(0,1fr))}.eye-choice{font-size:13px}.eye-choice small{font-size:10px}.shell .buttons .btn{flex:1}.shell .preview{min-height:205px}}
+
+/* Touch-friendly daily use and update badge */
+.shell .version{font-size:11px;color:#55708f;background:#e7eef9;border-radius:999px;padding:6px 10px}
+.shell .btn{min-height:45px;touch-action:manipulation}
+.shell .tests .btn{min-height:60px;line-height:1.2}
+.shell .eye-choice{min-height:92px}
+.shell .eye-choice.active{box-shadow:0 0 0 2px #8eb8ff inset}
+.shell .head{margin-bottom:15px}
+@media(max-width:700px){.shell .buttons:has(.eye-choice){gap:5px}.shell .head{gap:6px}.shell .status{font-size:11px}.shell .version{font-size:10px}}
