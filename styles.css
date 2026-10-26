@@ -61,3 +61,11 @@ body:has(.shell){background:#f1f4f9}
 .tvtools button:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
 .tvtools #sessionReset{background:#9c2929;color:white}
 @media(max-width:650px){.tvtools{position:fixed;left:8px;right:8px;top:8px}.tvtools button{font-size:12px;padding:9px}}
+
+/* v0.7: clinical chart legibility */
+.tv .fullchart{gap:0;max-height:none;overflow:visible}
+.tv .chart-line{flex-shrink:0}
+.tv .optotype{padding:20px 36px}
+.preview .fullchart{gap:0;max-height:210px;overflow:hidden}
+.preview .chart-line{margin-bottom:5px!important;gap:5px!important}
+.chart-page{max-width:640px;font-size:18px;line-height:1.5;padding:20px;color:#8a351a}
