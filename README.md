@@ -1,3 +1,5 @@
+> **Estado del proyecto:** prototipo en revisión. La geometría de los optotipos actuales NO está validada para uso clínico. Consultar el [plan maestro de normalización y pruebas](https://github.com/Nanyalbert/cartel-optotipo/issues/1) antes de modificar letras, tamaño, espaciado o calibración.
+
 # Cartel de Optotipo · Black Óptica
 
 Prototipo web independiente para mostrar optotipos en una TV y manejar las pruebas desde un segundo dispositivo.
