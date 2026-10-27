@@ -80,3 +80,11 @@ body:has(.shell){background:#f1f4f9}
 .preview .acuity-chart-row{padding-right:31px}.preview .acuity-row-label{font-size:10px;min-width:25px}
 .preview .acuity-chart-row .chart-line{margin-bottom:7px!important}
 .typographic-optotype text{font-kerning:none}
+
+/* v0.8.1: decimal tags and high-contrast glyph appearance */
+.acuity-chart-row{padding-right:68px}
+.acuity-row-label{right:0;min-width:48px;text-align:center;transform:translateY(-70%);border:1px solid #d5dce4;border-radius:8px;background:#f6f8fb;color:#192536;padding:6px 5px;font:700 14px/1.1 Arial,sans-serif;font-variant-numeric:tabular-nums}
+.acuity-row-label strong{font-size:inherit}
+.preview .acuity-chart-row{padding-right:42px}
+.preview .acuity-row-label{min-width:31px;padding:4px 2px;font-size:10px;border-radius:5px}
+.typographic-optotype{shape-rendering:geometricPrecision}
