@@ -2,6 +2,32 @@
 
 # Cartel de Optotipo · Black Óptica
 
+## Guía de uso diario — versión 1.2
+
+### Encender y conectar
+1. En el Philips u otra TV compatible, abrí la dirección del cartel con `?view=tv`. Esperá el estado «TV lista para vincular». Si el cartel está abierto, el código de seis caracteres sigue visible en la franja inferior mientras no haya conexión.
+2. En el celular abrí `?view=control`. Si no hay sincronización, aparece una **pantalla completa de aviso**; los botones del examen quedan bloqueados.
+3. Comprobá que el código que figura en el celular sea el mismo que el del televisor; corregilo si es necesario.
+4. Tocá **Sincronizar ahora**. El celular y la TV intercambian una confirmación de sesión. Recién cuando figure **Conectado a la TV** se habilita el control.
+5. Elegí tipo de optotipo, ojo evaluado y nivel decimal. Para ojo derecho/izquierdo utilizá un oclusor físico cuando corresponda.
+
+### ¿Qué hacer si se pierde la conexión?
+- **No cierres ni reinicies la TV de entrada.** El celular muestra automáticamente un aviso grande «Control remoto sin sincronizar» y un botón **Sincronizar ahora**.
+- Confirmá que en la TV aparezca un código. Ingresalo en el celular y pulsá el botón.
+- Si la TV no responde, usá **Reconectar celular** en la propia TV; conserva la calibración.
+- **Salir / volver a ingresar** genera un código nuevo y conserva la calibración; luego hay que escribir el código nuevo en el celular.
+- **Reiniciar desde cero** borra la calibración y el código de la TV. Úsalo únicamente ante un problema persistente: implica volver a medir la pantalla.
+
+### Significado de los estados
+- **Conectado:** se recibió confirmación de comunicación; los controles están habilitados.
+- **Conectando / comprobando:** no significa aún que la TV esté sincronizada.
+- **Sincronizar / Desconectado:** las órdenes no se envían; hay que restablecer la sesión.
+
+### Límites y verificación pendiente
+Esta solución utiliza PeerJS/WebRTC y señalización externa, incluso cuando TV y celular comparten Wi-Fi. Los navegadores de TV pueden suspender pestañas o conexiones, y WebRTC podría no ser compatible con ciertos Philips. Las comprobaciones de código y sintaxis no sustituyen ensayos reales en el televisor ni validación clínica de los optotipos.
+
+
+
 Prototipo web independiente para mostrar optotipos en una TV y manejar las pruebas desde un segundo dispositivo.
 
 ## Funciones
