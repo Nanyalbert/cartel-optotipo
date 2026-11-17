@@ -94,3 +94,33 @@ body:has(.shell){background:#f1f4f9}
 .tvtools #factoryReset{background:#a63333;color:#fff}
 .tvtools #restartConnection{background:#1765ad;color:#fff}
 .tvtools button{min-height:44px}
+
+/* v1.2 — unmistakable TV/mobile pairing states */
+.sync-overlay{position:fixed;inset:0;z-index:1000;background:#eef3fa;display:flex;align-items:center;justify-content:center;overflow-y:auto;padding:20px}
+.sync-overlay[hidden],.sync-overlay.hidden{display:none!important}
+.sync-dialog{background:#fff;color:#14243c;border:1px solid #d7e1ee;border-radius:22px;box-shadow:0 20px 60px rgba(17,38,70,.15);max-width:480px;width:100%;padding:26px;display:flex;flex-direction:column;gap:12px}
+.sync-signal{font-size:35px;color:#b45309;line-height:1;text-align:center}
+.sync-dialog h1{font-size:24px;margin:3px 0 0;text-align:center}
+.sync-dialog p{margin:2px 0;line-height:1.4;color:#42526a}
+.sync-steps{background:#f4f7fc;border:1px solid #dee7f3;border-radius:13px;padding:13px}
+.sync-steps p{font-size:14px;margin:6px 0}
+.sync-dialog label{font-size:14px;font-weight:700}
+.sync-dialog input{border:2px solid #9cafc8;background:#fff;border-radius:12px;color:#14243c;text-transform:uppercase;text-align:center;letter-spacing:.12em;font:700 23px/1.2 monospace;width:100%;padding:12px}
+.sync-dialog input:focus{outline:3px solid #9dc6ff;outline-offset:2px}
+.sync-action{width:100%;min-height:56px;font-size:17px}
+.sync-feedback{text-align:center;font-weight:700!important;color:#8a4a0f!important}
+.sync-tip{font-size:12px;line-height:1.4}
+.status[data-connection="connected"]{background:#dcfce7!important;color:#14532d!important;border:1px solid #86efac}
+.status[data-connection="connecting"]{background:#fef3c7!important;color:#92400e!important}
+.status[data-connection="disconnected"]{background:#fee2e2!important;color:#991b1b!important}
+.offline-notice{background:#fff4df;color:#784400;border:1px solid #f2cf80;border-radius:10px;padding:12px;font-size:13px;line-height:1.4}
+.offline-notice[hidden],.pair-guide[hidden]{display:none}
+.pair-guide{background:#eff6ff;border:1px solid #c7ddfa;border-radius:12px;padding:11px 13px;color:#1c355b}
+.pair-guide p{font-size:13px;line-height:1.4;margin:7px 0}
+.tv-pair-bar{position:fixed;z-index:12;bottom:57px;left:50%;transform:translateX(-50%);background:#10253f;color:#fff;border-radius:14px;padding:13px 18px;box-shadow:0 5px 20px #0003;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;max-width:94vw;min-width:min(420px,94vw)}
+.tv-pair-bar[hidden]{display:none!important}
+.tv-pair-bar b{font-size:clamp(15px,2.5vw,24px);letter-spacing:.025em}
+.tv-pair-bar span{font-size:13px;color:#d4e6ff}
+.tv-connection-status[data-connection="connected"]{background:#13703a}
+.tv-connection-status[data-connection="disconnected"]{background:#9d332e}
+@media(max-width:640px){.sync-overlay{padding:9px}.sync-dialog{padding:20px;border-radius:16px}.sync-dialog h1{font-size:21px}.tv-pair-bar{bottom:53px;min-width:85vw}}
